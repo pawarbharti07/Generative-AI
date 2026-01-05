@@ -11,7 +11,7 @@ Original file is located at
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
-def main1():
+def main():
     # Load tokenizer and model
     model_name = "Salesforce/codegen-350M-mono"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -22,7 +22,7 @@ def main1():
 
     return codegen
 
-codegen = main1()
+codegen = main()
 
 # Get user input
 prompt = input("Enter your programming question or request: ")
